@@ -11,7 +11,7 @@
         @foreach ($produtos as $produto)
 
 
-        <li><a href="http://projeto1.test/produtos/{{$produto->id}}">{{$produto->titulo}}</a></li>
+    <li><a href="{{URL::to('produtos')}}/{{$produto->id}}">{{$produto->titulo}}</a></li>
 
 
         @endforeach
